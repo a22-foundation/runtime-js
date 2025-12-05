@@ -1,0 +1,18 @@
+{
+  "name": "runtime-js",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local first A22 runtime",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,11 @@
+agent "bot" {
+    on event "ping" {
+        call workflow "pong" {}
+    }
+}
+
+workflow "pong" {
+    steps {
+        log = tool "console" { message = "pong" }
+    }
+}
